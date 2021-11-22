@@ -1,0 +1,1284 @@
+    body {
+        background-color: #f6f6f6;
+        font-family: 'Montserrat';
+        margin: 0;
+        overflow-x: hidden;
+    }
+    
+    .registerFirst {
+        font-family: 'Montserrat';
+        background-image: url('/images/2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    
+    .title {
+        font-weight: bold;
+        font-size: 300%;
+    }
+    
+    .bio {
+        font-weight: bold;
+        font-size: 100%;
+        margin-top: 3%;
+        margin-bottom: 1%;
+        color: gray;
+    }
+    
+    .forminput {
+        border: 0;
+        outline: 0;
+        margin: 1.2%;
+        margin-left: 0%;
+        background: transparent;
+        border-bottom: 5px solid black;
+        border-radius: 3px;
+        width: 15%;
+        font-family: 'Montserrat';
+    }
+    
+    #biography {
+        border: 0;
+        outline: 0;
+        margin: 1%;
+        margin-left: 0%;
+        background: transparent;
+    }
+    
+    textarea,
+    textarea::-webkit-input-placeholder {
+        font-size: 15px;
+        line-height: 1.5;
+        font-family: 'Montserrat';
+        resize: none;
+    }
+    
+    .btnNext {
+        color: white;
+        background-color: #48695c;
+        padding: 1.5% 7%;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+        margin-top: 3%;
+    }
+    
+    .registerSecond,
+    .registerThird,
+    .registerFourth {
+        font-family: 'Montserrat';
+        margin: 0% 5%;
+    }
+    
+    .academies {
+        display: flex;
+        margin-bottom: 1%;
+        padding: 0;
+        height: 20vh;
+    }
+    
+    .hrAcademies {
+        transform: rotate(-90deg);
+        margin-left: 37%;
+        margin-top: -25%;
+        background-color: #dd7f1e;
+        color: #dd7f1e;
+        width: 2px;
+        height: 850px;
+        margin-bottom: 0;
+    }
+    
+    #academyTitile {
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+    .academiesParagraph {
+        margin: 3% 0% 5%;
+    }
+    
+    .skillsParagraph {
+        margin: 0% 0% 3%;
+    }
+    
+    .boxesAcademies {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 6%;
+    }
+    
+    .boxesAcademies .radio {
+        background-color: white;
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        cursor: pointer;
+    }
+    
+    .boxesAcademies input[type=radio] {
+        display: none;
+    }
+    
+    .boxesAcademies input[type=radio]:checked+.radio {
+        background-color: #48695c;
+        color: white;
+    }
+    
+    .squareAcademies {
+        height: 130px;
+        width: 130px;
+        background-color: white;
+        margin: 0.5%;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .squareAcademies:hover {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+    
+    .squareAcademies:checked {
+        background-color: #48695c;
+    }
+    
+    .btnNext2 {
+        color: white;
+        background-color: #48695c;
+        padding: 1.5% 7%;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+        margin-top: 12%;
+        margin-left: 80%;
+    }
+    
+    .active {
+        background-color: #48695c !important;
+        color: white;
+    }
+    
+    .btnNext3 {
+        color: white;
+        background-color: #48695c;
+        padding: 1.5% 7%;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+        margin-top: 6%;
+        margin-left: 80%;
+    }
+    
+    .hrSkills {
+        transform: rotate(-90deg);
+        margin-left: 41%;
+        margin-top: -31%;
+        background-color: #dd7f1e;
+        color: #dd7f1e;
+        width: 2px;
+        height: 1020px;
+        margin-bottom: 0;
+    }
+    
+    .boxesSkills {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 2%;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 40vh;
+        overflow-y: scroll;
+        margin-bottom: 3%;
+    }
+    /*
+input[type=checkbox] {
+    display: none;
+} */
+    
+    .boxesSkills::-webkit-scrollbar {
+        width: 20px;
+    }
+    
+    .boxesSkills::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #dd7f1e;
+    }
+    
+    .boxesSkills::-webkit-scrollbar-thumb {
+        background: #dd7f1e;
+    }
+    
+    .boxesSkills::-webkit-scrollbar-thumb:hover {
+        background: #dd7f1e;
+    }
+    
+    .squareSkills {
+        height: 130px;
+        width: 130px;
+        background-color: white;
+        margin: 1%;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .squareSkills:checked {
+        background-color: #48695c !important;
+    }
+    
+    .boxesSkills .checkbox {
+        background-color: #48695c !important;
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        cursor: pointer;
+    }
+    
+    .boxesSkills input[type=checkbox] {
+        display: none;
+    }
+    
+    .boxesSkills input[type=checkbox]:checked+.checkbox {
+        background-color: #48695c !important;
+        color: white !important;
+    }
+    
+    .imageParagraph {
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+    .btnNext4 {
+        color: white;
+        background-color: #48695c;
+        padding: 1.5% 7%;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+        margin-top: 6%;
+        margin-left: 41%;
+    }
+    
+    .text-center {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .profile-images-card {
+        margin: auto;
+        display: table;
+        background: #fff;
+        padding: 25px 25px;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        margin-top: 1%;
+    }
+    
+    .profile-images {
+        width: 250px;
+        height: 250px;
+        background: #fff;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .profile-images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .custom-file input[type='file'] {
+        display: none;
+    }
+    
+    .custom-file {
+        cursor: pointer;
+        color: #000;
+        text-align: center;
+        display: table;
+        margin: auto;
+        margin-top: 2%;
+    }
+    
+    .paragraph {
+        display: flex;
+    }
+    
+    .paragraph2 {
+        margin-left: 0%;
+    }
+    
+    .iconDashboard {
+        margin-left: 78%;
+        margin-top: 1.5%;
+        color: #48695c;
+    }
+    
+    .iconApp {
+        color: #48695c;
+        margin-top: 6%;
+        margin-left: 6%;
+    }
+    
+    .filterAcademies {
+        height: 60px;
+        width: 123px;
+        background-color: white;
+        border-radius: 10px;
+        margin: 2%;
+        font-size: small;
+        font-weight: bold;
+        display: flex;
+        border: none;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        vertical-align: middle !important;
+    }
+    
+    .academyFilters {
+        display: flex !important;
+        flex-direction: row !important;
+        margin-top: 4%;
+        align-items: center !important;
+        text-align: center !important;
+        vertical-align: middle !important;
+        flex-wrap: wrap;
+    }
+    
+    .academyFilters input[type=radio] {
+        display: none;
+    }
+    
+    .academyFilters input[type=radio]:checked+.radio {
+        background-color: #48695c !important;
+        color: white !important;
+    }
+    
+    .brainsterTitle {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 150%;
+        margin: 1% 0%;
+        margin-top: 1%;
+    }
+    
+    span {
+        color: #949d99;
+    }
+    
+    .profileImage {
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+    
+    .profile-images-card1 {
+        margin: auto;
+        display: table;
+        background: #fff;
+        padding: 5px 5px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-top: 1%;
+    }
+    
+    .profile-images1 {
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .profile-images1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .navbar {
+        display: flex;
+        margin-left: 4%;
+    }
+    
+    #navBorder {
+        margin-left: 0%;
+        background-color: #dd7f1e;
+        color: #dd7f1e;
+        width: 100%;
+        height: 2px;
+        overflow-x: hidden;
+    }
+    
+    .navLinks {
+        display: flex;
+        font-size: small;
+        margin: 1.5% 0% 0 42%;
+    }
+    
+    .aLinks {
+        margin: 0 3%;
+        width: 140px;
+        height: 10px;
+        word-break: break-all;
+        text-decoration: none;
+        text-align: center;
+        color: black;
+    }
+    
+    .active1 {
+        color: grey;
+    }
+    
+    .container {
+        background-image: url('/images/4.jpg');
+        background-repeat: repeat-y;
+        background-size: initial;
+        min-height: 140vh;
+    }
+    
+    .containerApp {
+        background-image: url('/images/5.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 150vh;
+        margin-bottom: 5%;
+    }
+    
+    .containerShow {
+        background-color: #f6f6f6;
+    }
+    
+    .paragraphProjects {
+        margin-left: 3%;
+        margin-top: 2%;
+        margin-bottom: 7%;
+    }
+    
+    .plusIcon {
+        color: grey;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    h2 {
+        color: black;
+    }
+    
+    .projectCreate {
+        margin: 2% 4% 3% 4%;
+    }
+    
+    .flexProject {
+        display: flex;
+    }
+    
+    .paragraphCreate {
+        display: flex;
+        margin-bottom: 0;
+    }
+    
+    .h2Paragraph {
+        margin-left: 40%;
+    }
+    
+    .forminputProject {
+        border: 0;
+        outline: 0;
+        margin-left: 0%;
+        background: transparent;
+        border-bottom: 5px solid black;
+        border-radius: 3px;
+        font-family: 'Montserrat';
+    }
+    
+    .academiesProject {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 2%;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        margin-bottom: 1%;
+    }
+    
+    .squareAcademy {
+        height: 120px;
+        width: 120px;
+        background-color: white;
+        margin: 1%;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .academiesProject .checkbox {
+        background-color: #48695c !important;
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+    }
+    
+    .academiesProject input[type=checkbox] {
+        display: none;
+    }
+    
+    .academiesProject input[type=checkbox]:checked+.checkbox {
+        background-color: #48695c !important;
+        color: white !important;
+    }
+    
+    .paragraphSelect {
+        color: #dd7f1e;
+        margin-left: 80%;
+        margin-top: 0;
+        font-size: small;
+    }
+    
+    .createProjectBtn {
+        color: white;
+        background-color: #48695c;
+        padding: 1.5% 7%;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+        margin-top: 5%;
+        margin-left: 80%;
+    }
+    
+    #description {
+        border: 0;
+        outline: 0;
+        margin: 1%;
+        margin-left: 0%;
+        background: transparent;
+        margin-top: 3%;
+    }
+    
+    .desc {
+        font-weight: bold;
+        font-size: 100%;
+        margin-top: 7%;
+        margin-bottom: 1%;
+        color: gray;
+    }
+    
+    .contentForCard {
+        margin: 6% 0% 0% 12%;
+    }
+    
+    .projectCard {
+        background-color: white;
+        border-radius: 15px;
+        min-height: 30vh;
+        position: relative;
+        margin-bottom: 12%;
+        margin-top: 2%;
+        width: 90%;
+        margin-right: 5%;
+    }
+    
+    .profile-images-card2 {
+        position: absolute;
+        margin-top: -80px;
+        margin-left: 7%;
+        display: table;
+        background: white;
+        padding: 12px 12px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .projectImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .profile-images2 {
+        width: 100px;
+        height: 100px;
+        background: #fff;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .flexCard {
+        display: flex;
+    }
+    
+    .cardFirstPart {
+        width: 30%;
+    }
+    
+    .userName {
+        margin-left: -15%;
+        margin-top: 18%;
+        text-align: center;
+    }
+    
+    .userPosition {
+        margin-left: -15%;
+        text-align: center;
+        font-size: small;
+        margin-top: -4%;
+        color: #dd7f1e;
+    }
+    
+    .lookingForParagraph {
+        margin-left: 25%;
+        margin-bottom: 7%;
+        font-size: 10px;
+        text-align: start;
+        margin-top: 36%;
+    }
+    
+    .cardSecondPart {
+        width: 67%;
+    }
+    
+    .aplications {
+        position: absolute;
+        margin-top: -40px;
+        margin-left: 60%;
+        display: table;
+        background: #48695c;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        color: white;
+    }
+    
+    .numOfAplications {
+        text-align: center;
+        font-size: small;
+        font-weight: bold;
+        margin-top: 25%;
+    }
+    
+    .projectName {
+        margin-top: 4%;
+    }
+    
+    .projectDesc {
+        font-size: small;
+        text-align: justify;
+        word-break: keep-all;
+    }
+    
+    .showMoreLink {
+        margin-left: 89%;
+        color: #dd7f1e;
+        font-size: small;
+        text-decoration: underline;
+    }
+    
+    .morecontent span {
+        display: none;
+        color: black !important;
+    }
+    
+    .ReadMore {
+        display: visible;
+        margin-left: 88%;
+        color: #dd7f1e;
+        text-decoration: underline;
+        margin-top: 15%;
+    }
+    
+    .myProfile {
+        margin: 2% 5%;
+        display: flex;
+    }
+    
+    .flex {
+        display: flex;
+    }
+    
+    .imageProfile3 {
+        width: 50%;
+    }
+    
+    .profile-images-card3 {
+        margin: auto;
+        display: table;
+        background: #fff;
+        padding: 13px 13px;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin-top: 10%;
+        margin-left: 12%;
+    }
+    
+    .profile-images3 {
+        width: 110px;
+        height: 110px;
+        background: #fff;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .profile-images3 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .clickImageParagraph {
+        color: black !important;
+        font-size: 10px;
+        margin-top: 8%;
+        margin-left: 3%;
+    }
+    
+    .inputProfile {
+        margin-left: 10%;
+        margin-top: 13%;
+    }
+    
+    .forminputProfile {
+        border: 0;
+        outline: 0;
+        margin: 1.2%;
+        margin-left: 0%;
+        background: transparent;
+        border-bottom: 5px solid black;
+        border-radius: 3px;
+        width: 68%;
+        font-family: 'Montserrat';
+    }
+    
+    .paragraphBio {
+        margin-top: 13%;
+    }
+    
+    .skillParagraph {
+        margin-bottom: 5%;
+    }
+    
+    #profileBiography {
+        border: 0;
+        outline: 0;
+        margin: 1%;
+        margin-left: 0%;
+        background: transparent;
+        overflow-y: hidden;
+        height: 200px;
+    }
+    
+    .squareSkillsProfile {
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        margin: 0.5%;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: small;
+    }
+    
+    .boxesSkillsProfile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 2%;
+        flex-wrap: wrap;
+        /*   margin-left: 5%; */
+        margin-right: 2%;
+        height: 29vh;
+        overflow-y: scroll;
+        margin-bottom: 3%;
+    }
+    
+    .boxesSkillsProfile .checkbox {
+        background-color: #48695c !important;
+        display: inline-block;
+        height: 110px;
+        width: 110px;
+        cursor: pointer;
+    }
+    
+    .boxesSkillsProfile input[type=checkbox] {
+        display: none;
+    }
+    
+    .boxesSkillsProfile input[type=checkbox]:checked+.checkbox {
+        background-color: #48695c !important;
+        color: white !important;
+    }
+    
+    .boxesSkillsProfile::-webkit-scrollbar {
+        width: 15px;
+    }
+    
+    .boxesSkillsProfile::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #dd7f1e;
+    }
+    
+    .boxesSkillsProfile::-webkit-scrollbar-thumb {
+        background: #dd7f1e;
+    }
+    
+    .boxesSkillsProfile::-webkit-scrollbar-thumb:hover {
+        background: #dd7f1e;
+    }
+    
+    .textArea {
+        overflow-y: hidden;
+    }
+    
+    .btnEdit {
+        color: white;
+        background-color: #48695c;
+        padding: 2.5% 12%;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+        margin-top: 23%;
+        margin-left: 68%;
+    }
+    
+    .flexForCardProject {
+        display: flex;
+        width: 90%;
+    }
+    
+    .createProjectParagraph {
+        margin-bottom: 6%;
+    }
+    
+    .icons {
+        margin-left: -7%;
+        margin-top: 10%;
+    }
+    
+    .editIcon {
+        font-size: 20px;
+        color: grey;
+        margin-bottom: 5% !important;
+    }
+    
+    .deleteIcon {
+        margin-top: 15%;
+        font-size: 25px;
+        color: grey;
+    }
+    
+    .spaceBetween {
+        margin-top: 20%;
+    }
+    
+    .btnDeleteIcon {
+        border: none;
+        background-color: #f6f6f6;
+    }
+    
+    .half-circle {
+        width: 50px;
+        height: 25px;
+        background-color: #48695c;
+        border-top-left-radius: 110px;
+        border-top-right-radius: 110px;
+        border: 10px solid #48695c;
+        border-bottom: 0;
+    }
+    
+    .flexHalfCircle {
+        display: flex;
+        margin-left: 10%;
+    }
+    
+    .flexForDashboard {
+        display: flex;
+        margin-top: 4%;
+    }
+    
+    .widthAcademies {
+        width: 25%;
+    }
+    
+    .contentForCardonDashboard {
+        width: 85%;
+        margin-left: 20%;
+    }
+    
+    .projectCardonDashboard {
+        background-color: white;
+        border-radius: 15px;
+        min-height: 35.5vh;
+        position: relative;
+        margin-bottom: 12%;
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+    
+    .ReadMore1 {
+        display: visible;
+        margin-left: 86%;
+        color: #dd7f1e;
+        text-decoration: underline;
+        margin-top: 15%;
+    }
+    
+    .IamInBtn {
+        color: white;
+        background-color: #48695c;
+        padding: 2% 10%;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+        margin-top: 3%;
+        margin-left: 73%;
+    }
+    /* input[type=checkbox]+label {
+        background-color: white !important;
+        color: black !important;
+    }
+
+    input[type=checkbox]:checked+label {
+        background-color: #48695c !important;
+        color: white !important;
+    } */
+    
+    .paragraphForProject {
+        color: white;
+        font-size: 8px;
+        margin-top: 4%;
+        text-align: center;
+    }
+    
+    .flexCardAndButton {
+        display: flex;
+        justify-content: row !important;
+    }
+    
+    .lookingForParagraphProject {
+        margin-left: 25%;
+        margin-top: 45%;
+        margin-bottom: 7%;
+        font-size: 10px;
+        text-align: start;
+    }
+    
+    .modalParagraph {
+        margin-top: 2%;
+        color: black;
+    }
+    
+    .message {
+        border: none;
+    }
+    
+    .grey {
+        color: grey;
+    }
+    
+    .part1 {
+        margin-left: 5%;
+        width: 30%;
+    }
+    
+    .part2 {
+        margin-left: 45%;
+        text-align: center;
+        margin-top: 1%;
+    }
+    
+    .paragraphOnList {
+        font-size: small !important;
+        color: grey !important;
+    }
+    
+    .btnTeam {
+        color: white;
+        background-color: #dd7f1e;
+        padding: 5% 12%;
+        border: none;
+        border-radius: 10px;
+        font-size: smaller;
+    }
+    
+    .lookingForParagraphProjectApp {
+        margin-left: 25%;
+        margin-top: 35%;
+        margin-bottom: 7%;
+        font-size: 10px;
+        text-align: start;
+    }
+    
+    .contentForAppCards {
+        display: flex;
+        margin-left: 17%;
+        margin-right: 17%;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        border: 1px solid white;
+        border-radius: 10%;
+        margin-left: 2.5%;
+        margin-top: 13%;
+        width: 30% !important;
+    }
+    
+    .white {
+        background-color: white;
+    }
+    
+    .profile-image-AppCard {
+        margin: auto;
+        display: table;
+        background: #fff;
+        padding: 13px 13px;
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+        margin-top: -28%;
+        margin-left: 24%;
+    }
+    
+    .profile-AppImage {
+        width: 130px;
+        height: 130px;
+        background: #fff;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .profile-AppImage img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .appName {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 0%;
+    }
+    
+    .appMessage {
+        text-align: center;
+        margin-top: 0%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .appAcademy {
+        text-align: center;
+        color: #dd7f1e;
+        margin-top: -4%;
+    }
+    
+    .appMail {
+        font-size: 10px;
+        color: darkgrey;
+        text-align: center;
+        margin-top: -3%;
+    }
+    
+    .contentForApplyProjects {
+        width: 90%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    .btnPlusApp {
+        border: none;
+        background-color: white;
+        margin-left: 45%;
+        margin-bottom: 7%;
+    }
+    
+    .iconAppPlus {
+        font-size: x-large;
+        color: black;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    .marginLeftPagination {
+        margin-left: 45% !important;
+    }
+    /* .marginLeftFirstPage {
+    margin-left: 3%;
+} */
+    
+    .paginationText {
+        margin-left: 34%;
+    }
+    
+    .flexRow {
+        margin-left: 22%;
+        margin-bottom: 5%;
+    }
+    
+    .paragraphPagination {
+        margin-left: -12%;
+        margin-top: 0%;
+    }
+    
+    .greyBgColorCard {
+        background-color: lightslategrey;
+    }
+    
+    .part1Show {
+        width: 30%;
+    }
+    
+    .part2Show {
+        margin-left: 12%;
+        margin-top: 1.5%;
+        margin-right: 5%;
+    }
+    
+    .contentForImage {
+        margin-left: 5%;
+        margin-top: 8%;
+        width: 40%;
+    }
+    
+    .contentForInfo {
+        width: 40%;
+        margin-left: 23%;
+        margin-top: 14%;
+    }
+    
+    .imageProfile4 {
+        width: 60%;
+    }
+    
+    .profile-images-card4 {
+        margin: auto;
+        display: table;
+        background: #fff;
+        padding: 13px 13px;
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+        margin-top: 10%;
+        margin-left: 12%;
+    }
+    
+    .profile-images4 {
+        width: 180px;
+        height: 180px;
+        background: #fff;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .profile-images4 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .showName {
+        color: grey;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    
+    .showNameUser {
+        font-size: 28px;
+        margin-top: 0;
+    }
+    
+    .showContact {
+        color: grey;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    
+    .showMailUser {
+        font-size: 23px;
+        margin-top: 0;
+    }
+    
+    .userBio {
+        margin-left: 9%;
+        margin-right: 5%;
+        margin-top: 5%;
+        color: grey;
+    }
+    
+    .userBioParagraph {
+        font-size: 18px;
+    }
+    
+    .userSkills {
+        margin-left: 9%;
+        margin-right: 5%;
+        margin-top: 9%;
+    }
+    
+    .userSkillParagraph {
+        font-size: 18px;
+        color: grey;
+    }
+    
+    .skillsUser {
+        display: flex;
+        margin-right: 5%;
+        width: 90%;
+        flex-direction: row;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+    
+    .squareSkillUser {
+        height: 120px;
+        width: 120px;
+        background-color: white;
+        margin: 1%;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .skillsUser input[type=checkbox] {
+        display: none;
+    }
+    
+    .ReadMoreBio {
+        display: visible;
+        margin-left: 86%;
+        color: #dd7f1e;
+        text-decoration: underline;
+        margin-top: 15%;
+    }
+    
+    .morecontentBio span {
+        display: none;
+        color: grey !important;
+        margin-left: 9%;
+        margin-right: 5%;
+    }
+    
+    .aUserName {
+        color: black;
+    }
